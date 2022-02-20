@@ -1,0 +1,4 @@
+_site
+.antex-cache
+*.bak
+*.code-workspace

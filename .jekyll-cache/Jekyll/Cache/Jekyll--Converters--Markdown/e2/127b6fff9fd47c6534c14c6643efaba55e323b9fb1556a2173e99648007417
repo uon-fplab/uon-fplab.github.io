@@ -1,0 +1,5 @@
+I"â<h1 id="test-post">Test post</h1>
+
+<p>This is a test post wiith some <em>mark</em><strong>up</strong> and math
+\[ \int_\mathcal{C} F \quad \text{for } F \in \hat{\mathcal C} = [\mathcal{C}^{\mathrm{op}}, \mathrm{Set}]. \]</p>
+:ET

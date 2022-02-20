@@ -1,0 +1,64 @@
+title: Nottingham FP Lab
+email: fp-lunch@cs.nott.ac.uk
+description: University of Nottingham Functional Programming Lab
+baseurl: &baseurl
+url: "https://uonott-fplab.github.io/"
+twitter_username:
+github_username: uon-fplab
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: null # disable math engine and let the client side use KaTeX for simple LaTeX
+
+katex:
+  macros:
+    # "\\ExampleGlobalMacro": "\\LaTeX"
+  delimiters:
+    - {left: "$", right: "$", display: false}
+    - {left: "\\(", right: "\\)", display: false}
+    - {left: "\\[", right: "\\]", display: true}
+
+antex:
+  url_path_prefix: *baseurl
+  aliases: # disable most aliases and use server side AnTeX only for complex LaTeX
+    display_math: false
+    inline_math: false
+    inline_macro: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-scholar
+
+exclude:
+  # non default values:
+  - README.md
+  - krater.png
+  - bak
+  # default values:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+include:
+  - .nojekyll # tells GHP not to run Jekyll again on the build
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      katex:
+        macros:
+      antex:
+        preamble:
+      layout: "post"
+      theorem-numbers: true

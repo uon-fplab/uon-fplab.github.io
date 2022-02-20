@@ -1,0 +1,28 @@
+:root {
+  --font-color: #555555;
+  --bg-color: #fff;
+  --link-color: #0090B4;
+}
+
+body {
+  margin: auto;
+  max-width: 40em;
+  line-height: 1.5em;
+  background-color: var(--bg-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding-top: 1em
+}

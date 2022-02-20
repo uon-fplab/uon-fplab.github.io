@@ -1,0 +1,9 @@
+latexmk
+dvisvgm
+commutative-diagrams
+standalone
+xypic
+stmaryrd
+tikz-cd
+bbm-macros
+bbm
